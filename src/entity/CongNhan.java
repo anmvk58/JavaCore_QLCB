@@ -18,4 +18,8 @@ public class CongNhan extends CanBo{
                 "level=" + level +
                 '}';
     }
+
+    public void sanXuatHangHoa(){
+        System.out.println(super.getFullName() + " sản xuất hàng hóa");
+    }
 }

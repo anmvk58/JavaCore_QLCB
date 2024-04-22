@@ -7,4 +7,8 @@ public class NhanVien extends CanBo{
         super(fullName, age, gender, address);
         this.task = task;
     }
+
+    public void nhanVienLamViec(){
+        System.out.println(super.getFullName() + " Đang làm việc");
+    }
 }

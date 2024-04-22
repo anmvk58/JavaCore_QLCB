@@ -14,6 +14,12 @@ public abstract class CanBo {
         this.address = address;
     }
 
+    public CanBo(String fullName, int age, Gender gender) {
+        this.fullName = fullName;
+        this.age = age;
+        this.gender = gender;
+    }
+
     public String getFullName() {
         return fullName;
     }
@@ -28,5 +34,15 @@ public abstract class CanBo {
 
     public String getAddress() {
         return address;
+    }
+
+    @Override
+    public String toString() {
+        return "CanBo{" +
+                "fullName='" + fullName + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
